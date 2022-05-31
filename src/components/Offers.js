@@ -15,7 +15,6 @@ const Offers = ({
   // SORTED ALL OFFERS FUNCTIONS
   const [sortedList, setSortedList] = useState([]);
   const [active, setActive] = useState(false);
-  console.log(multibleOfferList.map(e => e.QuotaInfo))
   const handleSort = () => {
     const sortedMultibleOfferList = multibleOfferList?.sort(
       (a, b) => (!a.QuotaInfo.HasDiscount ? a.Cash : a.QuotaInfo.PremiumWithDiscount  ) - (!b.QuotaInfo.HasDiscount ?  b.Cash :  b.QuotaInfo.PremiumWithDiscount ));
