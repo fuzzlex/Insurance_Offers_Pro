@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: orange;
+  font-size: 35px;
+  color: white;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar span {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 400px) {
+  .navbar {
+    height: 15vh;
+    font-size: 25px;
+  }
+}
+
+.navbar-tab {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 0 0 3rem 3rem;
+}
+.navbar-tab * {
+  font-weight: 900;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card {
+  border: 1px solid rgb(186, 178, 178);
+  width: 90vw;
+  height: 20vh;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  .cards .card {
+    height: 25vh;
+  }
+}
+.cards img {
+  border-right: 1px solid rgb(211, 201, 201);
+  padding: 0.5rem 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 25vw;
+  height: 10vh;
+}
+.cards div:nth-child(2) > * {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 450px) {
+  .cards div:nth-child(2) > * {
+    width: 23vw;
+  }
+}
+.cards div:nth-child(3) {
+  margin-left: auto;
+  padding: 1rem;
+}
+.cards div:nth-child(3) h5 span {
+  text-decoration: line-through;
+}
+.cards div:nth-child(3) button {
+  width: 20vw;
+}
+@media screen and (max-width: 450px) {
+  .cards div:nth-child(3) button {
+    width: 35vw;
+  }
+}/*# sourceMappingURL=app.css.map */

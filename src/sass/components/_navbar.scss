@@ -1,0 +1,16 @@
+.navbar{
+    @include navbarStyle($orangeColor, 35px);
+    span {
+       margin-left: auto;
+       margin-right: 1rem;
+    }
+    @media screen and (max-width: 400px) {
+        height: 15vh;
+        font-size: 25px;
+        
+    }
+}
+.navbar-tab{
+    @include navbarTabStyle($whiteColor)
+
+}

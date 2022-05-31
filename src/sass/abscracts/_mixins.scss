@@ -1,0 +1,85 @@
+@mixin navbarStyle($color, $fontsize) {
+    background-color: $color;
+    font-size: $fontsize;
+    color: $whiteColor;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+@mixin navbarTabStyle($color) {
+    background-color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0 0 3rem 3rem ;
+
+    & *{
+        font-weight: 900;
+        color: white;
+
+    }
+
+    
+
+}
+@mixin  cardStyle() {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    & .card{
+        border:1px solid rgb(186, 178, 178);
+        width:90vw;
+        height: 20vh;
+        margin: 2rem;        
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 400px) {
+            height: 25vh;
+            
+        }
+        
+
+    }
+
+
+    & img {
+     border-right: 1px solid rgb(211, 201, 201);
+     padding:0.5rem 1rem;
+     object-fit: contain;
+     width: 25vw;
+     height: 10vh;
+    }
+    div:nth-child(2)  > *{
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        @media screen and (max-width: 450px) {
+            width: 23vw;
+            
+        }
+    }
+
+    div:nth-child(3){
+        margin-left: auto;
+        padding: 1rem;
+    }
+
+    div:nth-child(3) h5 span{
+        text-decoration: line-through;
+    }
+    div:nth-child(3) button{
+        width:20vw;
+        @media screen and (max-width: 450px) {
+            width: 35vw;
+            
+        }
+    }
+    
+
+}

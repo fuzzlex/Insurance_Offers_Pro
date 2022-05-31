@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+// Abstract files
+@import "abscracts/mixins";
+@import "abscracts/variables";
+
+
+// Components
+@import "components/buttons";
+@import "components/navbar";
+@import "components/offerCard.scss";
+
+
+// Pages
+@import "pages/home"; 
