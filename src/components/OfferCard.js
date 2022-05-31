@@ -46,7 +46,7 @@ const OfferCard = ({ offer }) => {
     <div>
       <div className="cards">
         <div className="card">
-          <img src={ImagePath} alt="Image isnt't uploaded" />
+          <img src={ImagePath} alt="isnt't uploaded" />
           <div
             style={{ cursor: "pointer" }}
             onMouseEnter={mouseEnter}
@@ -68,7 +68,7 @@ const OfferCard = ({ offer }) => {
                 />
               )}
             </h5>
-          </div>
+          </div> 
           <div>
             {HasDiscount && (
               <h5>
